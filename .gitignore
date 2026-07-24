@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+.thumbnail
+
+# Original design-tool exports and uncompressed source assets (kept locally only)
+_original-bundle-export.html
+Angel Care Network Home.dc.html
+support.js
+image-slot.js
+uploads/
+assets/

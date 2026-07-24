@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angel Care Network — In-Home Care in Anne Arundel County, Maryland</title>
+<meta name="description" content="Companion and personal care for seniors and disabled individuals across Anne Arundel County and surrounding Maryland areas. Caring at home since 2007. Free consultation: (855) 264-3526.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @keyframes acn-caret { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+  @keyframes acn-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; background: #FAF6F0; }
+  body { font-family: "Instrument Sans", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; color: #16232E; }
+  a { color: #10314A; text-decoration: none; }
+  a:hover { color: #2A5A7D; }
+  * { box-sizing: border-box; }
+  ::selection { background: #DDEAF0; }
+  section[id] { scroll-margin-top: 72px; }
+  img { max-width: 100%; }
+
+  /* Hover states */
+  .btn-dark:hover { background: #16232E !important; color: #FAF6F0 !important; }
+  .btn-outline:hover { background: rgba(16,49,74,0.06) !important; color: #10314A !important; }
+  .btn-light:hover { background: #FAF6F0 !important; color: #10314A !important; }
+  .btn-ghost-light:hover { background: rgba(250,246,240,0.08) !important; color: #FAF6F0 !important; }
+  .link-row:hover { background: #EEF4F8; padding-left: 14px !important; color: #16232E; }
+  .feature-row:hover { background: #EEF4F8; padding-left: 22px !important; box-shadow: inset 2px 0 0 #C2963E; }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 22px 44px rgba(6,22,36,0.30) !important; }
+  .cell-dark:hover { background: #194663 !important; }
+  .cell-light:hover { background: #EDF3F7 !important; }
+
+  /* Floating call pill */
+  #call-pill { opacity: 0; pointer-events: none; transform: translateY(8px); transition: opacity 260ms ease, transform 260ms ease, background 200ms ease; }
+  #call-pill.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  #call-pill:hover { background: #16405E !important; color: #FAF6F0; }
+
+  /* ------ Responsive ------ */
+  @media (max-width: 900px) {
+    .main-nav { display: none !important; }
+    .header-phone { display: none !important; }
+  }
+  @media (max-width: 960px) {
+    .hero-section { padding: 118px 20px 64px !important; }
+    .hero-grid { grid-template-columns: 1fr !important; gap: 44px !important; }
+    .marquee-wrap { margin: 36px -20px -64px !important; }
+    .about-section { padding: 72px 20px !important; }
+    .about-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+    .services-pad { padding-left: 20px !important; padding-right: 20px !important; }
+    .how-section { padding: 72px 20px !important; }
+    .checklist-outer { padding: 0 20px 72px !important; }
+    .call-text { padding: 64px 24px !important; }
+    .contact-section { padding: 72px 20px 0 !important; }
+    .contact-grid { grid-template-columns: 1fr !important; gap: 44px !important; }
+  }
+  @media (max-width: 800px) {
+    .services-cards { grid-template-columns: 1fr !important; }
+    .how-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .checklist-grid { grid-template-columns: 1fr !important; row-gap: 36px !important; }
+    .call-split { grid-template-columns: 1fr !important; }
+    .call-media { min-height: 300px !important; }
+    .footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  }
+  @media (max-width: 720px) {
+    .services-grid6 { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+    .checklist-card { padding: 36px 24px 32px !important; }
+  }
+  @media (max-width: 640px) {
+    .hero-media-grid { display: flex !important; flex-direction: column; }
+    .about-media-grid { display: flex !important; flex-direction: column; }
+  }
+  @media (max-width: 540px) {
+    .services-grid6 { grid-template-columns: 1fr !important; }
+    .contact-info-grid { grid-template-columns: 1fr !important; }
+    .header-inner { padding: 14px 20px !important; }
+  }
+</style>
+</head>
+<body>
+
+<div style="width:100%;background:#FAF6F0;overflow:hidden">
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(250,246,240,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(16,49,74,0.08)">
+    <div class="header-inner" style="max-width:1280px;margin:0 auto;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+      <a href="#top" style="display:flex;align-items:center;gap:10px;flex-shrink:0">
+        <img src="images/acn-logo.webp" alt="Angel Care Network" width="640" height="182" style="height:40px;width:auto;display:block" />
+      </a>
+      <nav class="main-nav" style="display:flex;align-items:center;gap:28px;font-size:14.5px;color:#3C4C58;flex-wrap:wrap;min-width:0">
+        <a href="#top" style="color:#10314A;font-weight:500">Home</a>
+        <a href="#about" style="color:#3C4C58">About</a>
+        <a href="#services" style="color:#3C4C58">Services</a>
+        <a href="#how" style="color:#3C4C58">For Families</a>
+        <a href="#contact" style="color:#3C4C58">Contact</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:18px;min-width:0">
+        <a class="header-phone" href="tel:+18552643526" style="font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:#16232E;white-space:nowrap;flex-shrink:0">(855) 264-3526</a>
+        <a class="btn-dark" href="#contact" style="background:#10314A;color:#FAF6F0;padding:11px 20px;border-radius:8px;font-size:14px;font-weight:500;white-space:nowrap">Free Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="top" class="hero-section" style="background:#DDEAF0;padding:156px 40px 96px">
+    <div style="max-width:1280px;margin:0 auto">
+      <div class="hero-grid" style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:start">
+        <div style="padding-top:16px">
+          <p style="display:flex;align-items:center;gap:12px;margin:0 0 24px;max-width:420px;flex-wrap:wrap"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:17px;color:#3C6079">Maryland</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#FAF6F0;padding:4px 9px 5px;border-radius:5px;display:inline-block">caring at home since 2007</span></p>
+          <h1 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(38px,6.5vw,64px);line-height:1.02;letter-spacing:-0.012em;font-weight:400;margin:0 0 26px;color:#10314A;text-wrap:pretty;min-height:2.04em">In-home care that lets<br /><span id="hl" style="background-image:linear-gradient(transparent 10%, #B6D8E8 10%, #B6D8E8 86%, transparent 86%);padding:0 4px;margin:0 -2px;box-decoration-break:clone;-webkit-box-decoration-break:clone;white-space:nowrap;transition:background-image 300ms ease"><span id="typed">home stay home</span><span style="display:inline-block;width:3px;height:0.72em;background:#10314A;margin-left:3px;vertical-align:-0.03em;animation:acn-caret 1s steps(1,end) infinite"></span></span></h1>
+          <p style="font-size:18.5px;line-height:1.55;color:#3C4C58;margin:0 0 34px;max-width:520px;text-wrap:pretty">Companion and personal care for seniors and disabled individuals across Anne Arundel County and surrounding areas — delivered with a personal touch you won't find at a large agency.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:46px">
+            <a class="btn-dark" href="#contact" style="background:#10314A;color:#FAF6F0;padding:15px 28px;border-radius:9px;font-size:15px;font-weight:500">Book a free consultation</a>
+            <a class="btn-outline" href="#services" style="background:transparent;color:#10314A;padding:15px 26px;border-radius:9px;font-size:15px;font-weight:500;border:1px solid rgba(16,49,74,0.28)">See our services</a>
+          </div>
+        </div>
+        <div class="hero-media-grid" style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);grid-template-rows:auto 238px;gap:14px">
+          <div style="grid-column:1 / span 2;position:relative;aspect-ratio:4 / 3;border-radius:14px;overflow:hidden">
+            <img src="images/hero.webp" alt="Caregiver with client at home" width="1600" height="1194" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <div style="background:#FAF6F0;border-radius:14px;padding:24px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:14px">
+            <p style="margin:0"><span style="font-size:13px;font-weight:500;color:#10314A;background:#DDEAF0;padding:4px 9px 5px;border-radius:5px;display:inline-block">Care we provide</span></p>
+            <div style="display:flex;flex-direction:column">
+              <a class="link-row" href="#services" style="display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:15px;color:#16232E;padding:10px 8px;margin:0 -8px;border-radius:8px;border-bottom:1px solid rgba(16,49,74,0.1);transition:background 220ms ease, padding-left 220ms ease">Companion care<span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;opacity:0.45"></span></a>
+              <a class="link-row" href="#services" style="display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:15px;color:#16232E;padding:10px 8px;margin:0 -8px;border-radius:8px;border-bottom:1px solid rgba(16,49,74,0.1);transition:background 220ms ease, padding-left 220ms ease">Personal care<span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;opacity:0.45"></span></a>
+              <a class="link-row" href="#services" style="display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:15px;color:#16232E;padding:10px 8px;margin:0 -8px;border-radius:8px;transition:background 220ms ease, padding-left 220ms ease">Alzheimer&rsquo;s care<span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;opacity:0.45"></span></a>
+            </div>
+            <a href="#services" style="font-size:14px;font-weight:500;color:#10314A;border-bottom:1px solid rgba(16,49,74,0.28);padding-bottom:2px;align-self:flex-start">See all services</a>
+          </div>
+          <div style="background:#10314A;border-radius:14px;padding:26px 24px;display:flex;flex-direction:column;justify-content:space-between;gap:20px">
+            <p style="margin:0"><span style="font-size:13px;font-weight:500;color:#DDEAF0;background:rgba(221,234,240,0.14);padding:4px 9px 5px;border-radius:5px;display:inline-block">Talk to us</span></p>
+            <div>
+              <a href="tel:+18552643526" style="font-family:'Instrument Serif',Georgia,serif;font-size:29px;line-height:1.1;letter-spacing:-0.01em;color:#FAF6F0;display:block">(855)<br />264-3526</a>
+              <p style="font-size:13.5px;line-height:1.5;color:#A9C3D4;margin:14px 0 0">Free consultation. No pressure, no template.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee-wrap" style="margin:44px -40px -96px;padding:20px 0;border-top:1px solid rgba(16,49,74,0.18);overflow:hidden">
+        <div style="display:flex;width:max-content;animation:acn-marquee 34s linear infinite">
+          <div style="display:flex;align-items:center;gap:26px;padding-right:26px"><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Companion care</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Personal care</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Alzheimer&rsquo;s &amp; memory care</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Respite for families</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Meals &amp; nutrition</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Medication reminders</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Errands &amp; appointments</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Light housekeeping</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span></div>
+          <div style="display:flex;align-items:center;gap:26px;padding-right:26px" aria-hidden="true"><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Companion care</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Personal care</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Alzheimer&rsquo;s &amp; memory care</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Respite for families</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Meals &amp; nutrition</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Medication reminders</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Errands &amp; appointments</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span><span style="display:flex;align-items:center;gap:26px;flex-shrink:0"><span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#10314A;white-space:nowrap">Light housekeeping</span><span style="width:5px;height:5px;flex-shrink:0;background:#10314A;transform:rotate(45deg);display:block"></span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section" style="padding:112px 40px">
+    <div class="about-grid" style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start">
+      <div>
+        <p style="display:flex;align-items:center;gap:12px;margin:0 0 24px;max-width:460px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">01</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#DDEAF0;padding:4px 9px 5px;border-radius:5px;display:inline-block">Who we are</span></p>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,5vw,44px);line-height:1.08;letter-spacing:-0.012em;font-weight:400;margin:0 0 22px;color:#10314A;text-wrap:pretty">Trusted, experienced, and genuinely passionate</h2>
+        <p style="font-size:17px;line-height:1.6;color:#3C4C58;margin:0 0 18px;max-width:490px">Angel Care Network is a premier provider of in-home care for seniors and disabled individuals in Maryland. We treat our patients like family, helping your loved one live at home in as much physical, mental, and emotional health as possible.</p>
+        <p style="font-size:17px;line-height:1.6;color:#3C4C58;margin:0 0 44px;max-width:490px">Our owner has more than 20 years of experience in home health, and some of our caregivers have been with us since we opened our doors in 2007.</p>
+        <p style="font-family:'Instrument Serif',Georgia,serif;font-size:22px;color:#10314A;margin:0 0 4px;padding-bottom:16px;border-bottom:1px solid rgba(16,49,74,0.14)">What we're known for</p>
+        <div style="display:flex;flex-direction:column">
+          <div class="feature-row" style="display:flex;align-items:center;gap:18px;padding:16px 12px;margin:0 -12px;border-radius:10px;border-bottom:1px solid rgba(16,49,74,0.1);transition:background 240ms ease, padding-left 240ms ease, box-shadow 240ms ease">
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">01</span>
+            <span style="font-size:16.5px;color:#16232E;flex:1">Care plans tailored to one person</span>
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;border:1px solid rgba(16,49,74,0.16);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;margin-left:-2px"></span></span>
+          </div>
+          <div class="feature-row" style="display:flex;align-items:center;gap:18px;padding:16px 12px;margin:0 -12px;border-radius:10px;border-bottom:1px solid rgba(16,49,74,0.1);transition:background 240ms ease, padding-left 240ms ease, box-shadow 240ms ease">
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">02</span>
+            <span style="font-size:16.5px;color:#16232E;flex:1">Caregivers who stay for years</span>
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;border:1px solid rgba(16,49,74,0.16);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;margin-left:-2px"></span></span>
+          </div>
+          <div class="feature-row" style="display:flex;align-items:center;gap:18px;padding:16px 12px;margin:0 -12px;border-radius:10px;border-bottom:1px solid rgba(16,49,74,0.1);transition:background 240ms ease, padding-left 240ms ease, box-shadow 240ms ease">
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">03</span>
+            <span style="font-size:16.5px;color:#16232E;flex:1">Companion and personal care under one roof</span>
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;border:1px solid rgba(16,49,74,0.16);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;margin-left:-2px"></span></span>
+          </div>
+          <div class="feature-row" style="display:flex;align-items:center;gap:18px;padding:16px 12px;margin:0 -12px;border-radius:10px;border-bottom:1px solid rgba(16,49,74,0.1);transition:background 240ms ease, padding-left 240ms ease, box-shadow 240ms ease">
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">04</span>
+            <span style="font-size:16.5px;color:#16232E;flex:1">Support for every age and condition</span>
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;border:1px solid rgba(16,49,74,0.16);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;margin-left:-2px"></span></span>
+          </div>
+          <div class="feature-row" style="display:flex;align-items:center;gap:18px;padding:16px 12px;margin:0 -12px;border-radius:10px;border-bottom:1px solid rgba(16,49,74,0.1);transition:background 240ms ease, padding-left 240ms ease, box-shadow 240ms ease">
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">05</span>
+            <span style="font-size:16.5px;color:#16232E;flex:1">Medication administration under RN supervision</span>
+            <span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;border:1px solid rgba(16,49,74,0.16);display:flex;align-items:center;justify-content:center"><span style="width:6px;height:6px;border-right:1.5px solid #10314A;border-top:1.5px solid #10314A;transform:rotate(45deg);display:block;margin-left:-2px"></span></span>
+          </div>
+        </div>
+        <a class="btn-dark" href="#contact" style="display:inline-block;margin-top:34px;background:#10314A;color:#FAF6F0;padding:14px 26px;border-radius:9px;font-size:15px;font-weight:500">Learn more about us</a>
+      </div>
+      <div class="about-media-grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding-top:8px">
+        <div style="grid-column:1 / span 2;position:relative;border-radius:14px;overflow:hidden;height:300px">
+          <img src="images/medication.webp" alt="Medication reminders at the kitchen table" width="1600" height="1194" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+        </div>
+        <div style="background:#DDEAF0;border-radius:14px;padding:30px 30px 32px;min-height:236px;display:flex;flex-direction:column;justify-content:space-between;gap:36px">
+          <p style="margin:0"><span style="font-size:13px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#FAF6F0;padding:4px 9px 5px;border-radius:5px;display:inline-block">Our pledge</span></p>
+          <div>
+            <div style="font-family:'Instrument Serif',Georgia,serif;font-size:29px;line-height:1.16;letter-spacing:-0.01em;color:#10314A;font-weight:500">No "one size fits all" service.</div>
+            <p style="font-size:14.5px;line-height:1.55;color:#3C6079;margin:14px 0 0">Every care plan we create is built around one client's needs.</p>
+          </div>
+        </div>
+        <div style="background:#10314A;border-radius:14px;padding:30px 30px 32px;min-height:236px;display:flex;flex-direction:column;justify-content:space-between;gap:36px">
+          <p style="margin:0"><span style="font-size:13px;font-weight:500;letter-spacing:0.005em;color:#DDEAF0;background:rgba(221,234,240,0.14);padding:4px 9px 5px;border-radius:5px;display:inline-block">Who shows up</span></p>
+          <div>
+            <div style="font-family:'Instrument Serif',Georgia,serif;font-size:29px;line-height:1.16;letter-spacing:-0.01em;color:#FAF6F0;font-weight:500">The same Angels, year after year.</div>
+            <p style="font-size:14.5px;line-height:1.55;color:#A9C3D4;margin:14px 0 0">Some of our caregivers have been with us since we opened in 2007.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" style="background:#10314A;padding:104px 0 0">
+    <div class="services-pad" style="max-width:1280px;margin:0 auto;padding:0 40px 64px;text-align:center">
+      <p style="display:flex;align-items:center;justify-content:center;gap:12px;margin:0 0 22px"><span style="width:30px;height:30px;border-radius:50%;border:1px solid rgba(221,234,240,0.34);color:#DDEAF0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">02</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:0.005em;color:#DDEAF0;background:rgba(221,234,240,0.14);padding:4px 9px 5px;border-radius:5px;display:inline-block">What we do</span></p>
+      <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,5.5vw,46px);line-height:1.06;letter-spacing:-0.012em;font-weight:400;margin:0 auto 18px;color:#FAF6F0;max-width:700px;text-wrap:pretty">Two kinds of care, one careful plan</h2>
+      <p style="font-size:17px;line-height:1.55;color:#A9C3D4;margin:0 auto;max-width:620px">We serve people of all ages and conditions — a senior needing help around the house, a parent managing a neurological condition, or a child with an ongoing health need.</p>
+    </div>
+    <div class="services-pad services-cards" style="max-width:1280px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+      <div class="service-card" style="background:#FAF6F0;border-radius:16px;padding:42px 40px 40px;box-shadow:0 14px 30px rgba(6,22,36,0.22);transition:transform 260ms ease, box-shadow 260ms ease">
+        <p style="display:flex;align-items:center;gap:10px;margin:0 0 16px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">01</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#DDEAF0;padding:4px 9px 5px;border-radius:5px;display:inline-block">Nonmedical</span></p>
+        <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:28px;letter-spacing:-0.012em;font-weight:400;margin:0 0 16px;color:#10314A">Companion Care</h3>
+        <p style="font-size:16px;line-height:1.62;color:#3C4C58;margin:0 0 30px">Companionship and supervision, meal preparation, medication reminders, laundry, errands, games and activities, and light housekeeping — the bit of extra help that maximizes independence at home.</p>
+        <a href="#contact" style="font-size:15px;font-weight:500;color:#10314A;border-bottom:1px solid rgba(16,49,74,0.3);padding-bottom:2px">Free consultation</a>
+      </div>
+      <div class="service-card" style="background:#DDEAF0;border-radius:16px;padding:42px 40px 40px;box-shadow:0 14px 30px rgba(6,22,36,0.22);transition:transform 260ms ease, box-shadow 260ms ease">
+        <p style="display:flex;align-items:center;gap:10px;margin:0 0 16px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#FAF6F0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">02</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#FAF6F0;padding:4px 9px 5px;border-radius:5px;display:inline-block">Hands-on</span></p>
+        <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:28px;letter-spacing:-0.012em;font-weight:400;margin:0 0 16px;color:#10314A">Personal Care</h3>
+        <p style="font-size:16px;line-height:1.62;color:#3C4C58;margin:0 0 30px">Angels providing personal care assist with all daily activities, including dressing, assistance feeding, ambulation, toileting, and hygiene — with dignity, every visit.</p>
+        <a href="#contact" style="font-size:15px;font-weight:500;color:#10314A;border-bottom:1px solid rgba(16,49,74,0.3);padding-bottom:2px">Free consultation</a>
+      </div>
+    </div>
+    <div class="services-pad" style="max-width:1280px;margin:56px auto 0;padding:0 40px">
+    <div class="services-grid6" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(250,246,240,0.16);border:1px solid rgba(250,246,240,0.16);border-radius:14px;overflow:hidden">
+      <div class="cell-dark" style="background:#10314A;padding:30px 28px 32px;transition:background 240ms ease">
+        <span style="width:30px;height:30px;border-radius:50%;border:1px solid rgba(221,234,240,0.34);color:#DDEAF0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px;margin-bottom:40px">01</span>
+        <div style="font-size:17px;line-height:1.35;color:#FAF6F0;font-weight:500">Alzheimer's &amp; memory care</div>
+      </div>
+      <div class="cell-dark" style="background:#10314A;padding:30px 28px 32px;transition:background 240ms ease">
+        <span style="width:30px;height:30px;border-radius:50%;border:1px solid rgba(221,234,240,0.34);color:#DDEAF0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px;margin-bottom:40px">02</span>
+        <div style="font-size:17px;line-height:1.35;color:#FAF6F0;font-weight:500">Respite care for families</div>
+      </div>
+      <div class="cell-dark" style="background:#10314A;padding:30px 28px 32px;transition:background 240ms ease">
+        <span style="width:30px;height:30px;border-radius:50%;border:1px solid rgba(221,234,240,0.34);color:#DDEAF0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px;margin-bottom:40px">03</span>
+        <div style="font-size:17px;line-height:1.35;color:#FAF6F0;font-weight:500">Nutrition monitoring &amp; meals</div>
+      </div>
+      <div class="cell-dark" style="background:#10314A;padding:30px 28px 32px;transition:background 240ms ease">
+        <span style="width:30px;height:30px;border-radius:50%;border:1px solid rgba(221,234,240,0.34);color:#DDEAF0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px;margin-bottom:40px">04</span>
+        <div style="font-size:17px;line-height:1.35;color:#FAF6F0;font-weight:500">Appointments &amp; transportation</div>
+      </div>
+      <div class="cell-dark" style="background:#10314A;padding:30px 28px 32px;transition:background 240ms ease">
+        <span style="width:30px;height:30px;border-radius:50%;border:1px solid rgba(221,234,240,0.34);color:#DDEAF0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px;margin-bottom:40px">05</span>
+        <div style="font-size:17px;line-height:1.35;color:#FAF6F0;font-weight:500">Household help &amp; errands</div>
+      </div>
+      <div class="cell-light" style="background:#DDEAF0;padding:30px 28px 32px;transition:background 240ms ease">
+        <span style="width:30px;height:30px;border-radius:50%;border:1px solid rgba(16,49,74,0.3);color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px;margin-bottom:40px">06</span>
+        <div style="font-size:17px;line-height:1.35;color:#10314A;font-weight:500">Spousal support programs</div>
+      </div>
+    </div>
+    </div>
+    <div style="height:104px"></div>
+  </section>
+
+  <section id="how" class="how-section" style="padding:112px 40px">
+    <div style="max-width:1280px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:56px">
+        <p style="display:flex;align-items:center;justify-content:center;gap:12px;margin:0 0 22px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">03</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#DDEAF0;padding:4px 9px 5px;border-radius:5px;display:inline-block">For families</span></p>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,5.5vw,46px);line-height:1.06;letter-spacing:-0.012em;font-weight:400;margin:0 auto 18px;color:#10314A;max-width:640px;text-wrap:pretty">Getting care started, step by step</h2>
+        <p style="font-size:17px;line-height:1.55;color:#3C4C58;margin:0 auto;max-width:580px">Most families call us in the middle of a hard week. Here's exactly what happens next.</p>
+      </div>
+      <div class="how-grid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <div style="min-width:0">
+          <div style="position:relative;border-radius:14px;overflow:hidden;height:230px;margin-bottom:22px">
+            <img src="images/hero.webp" alt="Free consultation at home" width="1600" height="1194" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <p style="display:flex;align-items:center;gap:10px;margin:0 0 12px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">01</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#DDEAF0;padding:4px 9px 5px;border-radius:5px;display:inline-block">First visit</span></p>
+          <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:21px;letter-spacing:-0.012em;font-weight:400;margin:0 0 10px;color:#10314A">Free consultation</h3>
+          <p style="font-size:15.5px;line-height:1.55;color:#3C4C58;margin:0">We sit down with you and your loved one to understand the routine, the health picture, and what would make daily life easier.</p>
+        </div>
+        <div style="min-width:0">
+          <div style="position:relative;border-radius:14px;overflow:hidden;height:230px;margin-bottom:22px">
+            <img src="images/medication.webp" alt="Building the care plan" width="1600" height="1194" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <p style="display:flex;align-items:center;gap:10px;margin:0 0 12px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#F4E4BC;color:#7A5A16;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">02</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:500;letter-spacing:0.005em;color:#7A5A16;background:#F4E4BC;padding:4px 9px 5px;border-radius:5px;display:inline-block">The plan</span></p>
+          <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:21px;letter-spacing:-0.012em;font-weight:400;margin:0 0 10px;color:#10314A">A tailored care plan</h3>
+          <p style="font-size:15.5px;line-height:1.55;color:#3C4C58;margin:0">We build a plan for one person — hours, tasks, and level of care — and match it to the Angel whose skills and temperament fit best.</p>
+        </div>
+        <div style="min-width:0">
+          <div style="position:relative;border-radius:14px;overflow:hidden;height:230px;margin-bottom:22px">
+            <img src="images/ongoing.webp" alt="Ongoing care at home" width="1600" height="1063" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <p style="display:flex;align-items:center;gap:10px;margin:0 0 12px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DCE9DD;color:#2C4A33;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">03</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:500;letter-spacing:0.005em;color:#2C4A33;background:#DCE9DD;padding:4px 9px 5px;border-radius:5px;display:inline-block">Ongoing care</span></p>
+          <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:21px;letter-spacing:-0.012em;font-weight:400;margin:0 0 10px;color:#10314A">Care at home, adjusted as needed</h3>
+          <p style="font-size:15.5px;line-height:1.55;color:#3C4C58;margin:0">Your daily needs become our responsibility. As things change, the plan changes with them — you stay in the loop throughout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="checklist-outer" style="padding:0 40px 112px">
+    <div class="checklist-card" style="max-width:1280px;margin:0 auto;background:#EDF3F7;border:1px solid rgba(16,49,74,0.08);border-radius:18px;padding:60px 56px 56px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap;margin-bottom:40px">
+        <div>
+          <p style="display:flex;align-items:center;gap:12px;margin:0 0 18px;max-width:440px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#DDEAF0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">04</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#DDEAF0;padding:4px 9px 5px;border-radius:5px;display:inline-block">Everything we can help with</span></p>
+          <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(26px,5vw,36px);line-height:1.1;letter-spacing:-0.012em;font-weight:400;margin:0;color:#10314A;max-width:520px;text-wrap:pretty">Anne Arundel County and surrounding areas</h2>
+        </div>
+        <p style="font-size:15.5px;line-height:1.55;color:#3C4C58;margin:0;max-width:360px">A reference list of the tasks our Angels take on — not a menu you have to choose from. Need something that isn't here? Ask, and we'll accommodate it.</p>
+      </div>
+      <div class="checklist-grid" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 48px">
+        <div style="min-width:0;border-top:1px solid rgba(16,49,74,0.14);padding-top:18px">
+          <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:23px;font-weight:400;letter-spacing:-0.01em;color:#10314A;margin:0 0 18px">Company &amp; wellbeing</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;font-size:15px;line-height:1.4;color:#3C4C58">
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Companionship and conversation</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Respite care</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Monitoring nutrition</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Morning wake-up and evening tuck-in</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Stimulate mental awareness</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Assist with clothing selection</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Appointment reminders and scheduling</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Accompany to the doctor and document advice</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Crafts, games, and activities</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Alzheimer&rsquo;s care</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Assist with walking</span></li>
+          </ul>
+        </div>
+        <div style="min-width:0;border-top:1px solid rgba(16,49,74,0.14);padding-top:18px">
+          <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:23px;font-weight:400;letter-spacing:-0.01em;color:#10314A;margin:0 0 18px">Home &amp; meals</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;font-size:15px;line-height:1.4;color:#3C4C58">
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Plan, prepare, and clean up meals</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Prepare grocery lists and meal planning</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Record and arrange recipes</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Check food expiration dates</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Laundry and ironing</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Change linens and make beds</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Dust furniture and organize closets</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Take out garbage</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Care for houseplants</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Supervise home maintenance</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Assist with pet care</span></li>
+          </ul>
+        </div>
+        <div style="min-width:0;border-top:1px solid rgba(16,49,74,0.14);padding-top:18px">
+          <h3 style="font-family:'Instrument Serif',Georgia,serif;font-size:23px;font-weight:400;letter-spacing:-0.01em;color:#10314A;margin:0 0 18px">Errands, mail &amp; outings</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;font-size:15px;line-height:1.4;color:#3C4C58">
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Escort for shopping and errands</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Pick up prescriptions</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Drop off and pick up dry cleaning</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Mail bills and letters</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Write letters and correspondence</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Organize mail</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Maintain the calendar</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Plan visits, outings, and trips</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Visits to neighbors and friends</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Escort to services, plays, and concerts</span></li>
+            <li style="display:flex;align-items:flex-start;gap:10px"><span style="width:5px;height:5px;flex-shrink:0;margin-top:8px;background:#10314A;transform:rotate(45deg);display:block"></span><span>Medication reminders and administration*</span></li>
+          </ul>
+        </div>
+      </div>
+      <p style="display:flex;align-items:baseline;gap:10px;font-size:14px;line-height:1.5;color:#3C4C58;margin:36px 0 0;padding-top:20px;border-top:1px solid rgba(16,49,74,0.14)"><span style="color:#C2963E;font-weight:600">*</span><span>Medication is administered only by caregivers qualified to do so, always under the supervision of a registered nurse.</span></p>
+    </div>
+  </section>
+
+  <section style="background:#DDEAF0;padding:0">
+    <div class="call-split" style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch">
+      <div class="call-media" style="position:relative;min-width:0;min-height:440px">
+        <img src="images/outdoors.webp" alt="Walk outdoors with a caregiver" width="1600" height="905" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+      </div>
+      <div class="call-text" style="padding:88px 40px 88px 64px">
+        <p style="display:flex;align-items:center;gap:12px;margin:0 0 22px;max-width:380px"><span style="width:27px;height:27px;flex-shrink:0;border-radius:50%;background:#FAF6F0;color:#10314A;font-family:'IBM Plex Mono',monospace;font-size:11px;display:flex;align-items:center;justify-content:center;padding-top:1px">05</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:0.005em;color:#10314A;background:#FAF6F0;padding:4px 9px 5px;border-radius:5px;display:inline-block">Immediate needs</span></p>
+        <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(28px,5vw,40px);line-height:1.08;letter-spacing:-0.012em;font-weight:400;margin:0 0 20px;color:#10314A;text-wrap:pretty">Need someone this week? Call us.</h2>
+        <p style="font-size:17px;line-height:1.6;color:#3C6079;margin:0 0 32px;max-width:440px">For more immediate needs, talk with us directly about the senior or loved one who would benefit from quality in-home care.</p>
+        <a href="tel:+18552643526" style="display:inline-block;font-size:clamp(26px,6vw,34px);letter-spacing:-0.02em;color:#10314A;font-weight:500;border-bottom:1px solid rgba(16,49,74,0.3);padding-bottom:4px">(855) 264-3526</a>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#3C6079;margin:22px 0 0;overflow-wrap:anywhere">Alt: (443) 758-5969 · info@angelcarenetwork.com</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section" style="background:#10314A;padding:104px 40px 0">
+    <div style="max-width:1280px;margin:0 auto">
+      <div class="contact-grid" style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:72px;align-items:start;padding-bottom:80px;border-bottom:1px solid rgba(250,246,240,0.16)">
+        <div>
+          <p style="display:flex;align-items:center;gap:12px;margin:0 0 24px;max-width:400px"><span style="width:30px;height:30px;flex-shrink:0;border-radius:50%;border:1px solid rgba(221,234,240,0.34);color:#DDEAF0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.02em;display:flex;align-items:center;justify-content:center;padding-top:1px">06</span><span style="font-family:'Instrument Sans',sans-serif;font-size:14.5px;font-weight:500;letter-spacing:0.005em;color:#DDEAF0;background:rgba(221,234,240,0.14);padding:4px 9px 5px;border-radius:5px;display:inline-block">Get started</span></p>
+          <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:clamp(32px,6vw,52px);line-height:1.03;letter-spacing:-0.012em;font-weight:400;margin:0 0 22px;color:#FAF6F0;max-width:560px;text-wrap:pretty">Turn your daily needs into our responsibility</h2>
+          <p style="font-size:17.5px;line-height:1.55;color:#A9C3D4;margin:0 0 34px;max-width:480px">Tell us about your loved one and we'll put together a plan — no cost, no pressure, no template.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn-light" href="tel:+18552643526" style="background:#DDEAF0;color:#10314A;padding:15px 28px;border-radius:9px;font-size:15px;font-weight:500">Call (855) 264-3526</a>
+            <a class="btn-ghost-light" href="mailto:info@angelcarenetwork.com" style="background:transparent;color:#FAF6F0;padding:15px 26px;border-radius:9px;font-size:15px;font-weight:500;border:1px solid rgba(250,246,240,0.32)">Email us</a>
+          </div>
+        </div>
+        <div class="contact-info-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:32px 24px;padding-top:12px">
+          <div>
+            <p style="font-family:'Instrument Serif',Georgia,serif;font-size:18px;color:#8FB4CB;margin:0 0 12px">Email</p>
+            <a href="mailto:info@angelcarenetwork.com" style="color:#FAF6F0;font-size:15.5px;overflow-wrap:anywhere">info@angelcarenetwork.com</a>
+          </div>
+          <div>
+            <p style="font-family:'Instrument Serif',Georgia,serif;font-size:18px;color:#8FB4CB;margin:0 0 12px">Business</p>
+            <div style="color:#FAF6F0;font-size:15.5px;line-height:1.5">(855) 264-3526<br>(443) 758-5969</div>
+          </div>
+          <div>
+            <p style="font-family:'Instrument Serif',Georgia,serif;font-size:18px;color:#8FB4CB;margin:0 0 12px">Mail</p>
+            <div style="color:#FAF6F0;font-size:15.5px;line-height:1.5">P.O. Box 561<br>Riva, MD 21140</div>
+          </div>
+          <div>
+            <p style="font-family:'Instrument Serif',Georgia,serif;font-size:18px;color:#8FB4CB;margin:0 0 12px">Service area</p>
+            <div style="color:#FAF6F0;font-size:15.5px;line-height:1.5">Anne Arundel County<br>&amp; surrounding Maryland</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-grid" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding:56px 0">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+            <img src="images/acn-logo-light.webp" alt="Angel Care Network" width="640" height="182" loading="lazy" style="height:38px;width:auto;display:block" />
+          </div>
+          <p style="font-size:15px;line-height:1.55;color:#A9C3D4;margin:0;max-width:320px">Experienced, passionate, professional home care for seniors and disabled individuals in Maryland.</p>
+        </div>
+        <div>
+          <p style="font-family:'Instrument Serif',Georgia,serif;font-size:18px;color:#8FB4CB;margin:0 0 16px">Pages</p>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+            <a href="#top" style="color:#DDEAF0">Home</a>
+            <a href="#about" style="color:#DDEAF0">About</a>
+            <a href="#services" style="color:#DDEAF0">Services</a>
+            <a href="#how" style="color:#DDEAF0">For Families</a>
+          </div>
+        </div>
+        <div>
+          <p style="font-family:'Instrument Serif',Georgia,serif;font-size:18px;color:#8FB4CB;margin:0 0 16px">More</p>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:15px">
+            <a href="#services" style="color:#DDEAF0">Spousal Support</a>
+            <a href="#contact" style="color:#DDEAF0">Contact</a>
+            <a href="#top" style="color:#DDEAF0">Blog</a>
+            <a href="tel:+18552643526" style="color:#DDEAF0">Free Consultation</a>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(250,246,240,0.16);padding:26px 0 34px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7E9CB2;margin:0">© 2026 Angel Care Network. All rights reserved.</p>
+        <p style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#7E9CB2;margin:0">Maryland · Since 2007</p>
+      </div>
+    </div>
+  </section>
+
+  <a id="call-pill" href="tel:+18552643526" style="position:fixed;bottom:24px;right:24px;z-index:60;background:#10314A;color:#FAF6F0;padding:14px 22px;border-radius:100px;font-size:14.5px;font-weight:500;box-shadow:0 8px 24px rgba(16,49,74,0.22)">Call (855) 264-3526</a>
+
+</div>
+
+<script>
+(function () {
+  var phrases = ["home stay home", "days stay familiar", "routines stay yours"];
+  var colors = ["#B6D8E8", "#F0DBA9", "#C6DCC9"];
+  var typedEl = document.getElementById("typed");
+  var hlEl = document.getElementById("hl");
+  var phrase = 0, typed = phrases[0], deleting = false;
+
+  function paint(i) {
+    var c = colors[i % colors.length];
+    hlEl.style.backgroundImage = "linear-gradient(transparent 10%, " + c + " 10%, " + c + " 86%, transparent 86%)";
+  }
+  function tick() {
+    var full = phrases[phrase];
+    if (!deleting) {
+      if (typed.length < full.length) {
+        typed = full.slice(0, typed.length + 1);
+        typedEl.textContent = typed;
+        setTimeout(tick, 81);
+      } else {
+        setTimeout(function () { deleting = true; tick(); }, 2860);
+      }
+    } else {
+      if (typed.length > 0) {
+        typed = full.slice(0, typed.length - 1);
+        typedEl.textContent = typed;
+        setTimeout(tick, 39);
+      } else {
+        phrase = (phrase + 1) % phrases.length;
+        paint(phrase);
+        deleting = false;
+        setTimeout(tick, 338);
+      }
+    }
+  }
+  setTimeout(function () { deleting = true; tick(); }, 3380);
+
+  var pill = document.getElementById("call-pill");
+  function onScroll() {
+    pill.classList.toggle("visible", window.scrollY > 620);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+</script>
+</body>
+</html>
